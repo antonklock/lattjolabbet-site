@@ -58,7 +58,6 @@
 	}
 
 	.shadow {
-		margin-top: -17.5vh;
 		z-index: -1;
 		text-shadow: 0.5rem 0.35rem 0rem rgba(0, 0, 0, 0.25);
 	}
