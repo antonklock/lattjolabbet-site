@@ -94,7 +94,7 @@
 		background: linear-gradient(180deg, rgba(14, 223, 243, 1) 0%, rgba(22, 156, 141, 1) 100%);
 	}
 
-	//Are expanded and collapsed the same here?? Refactor??
+	//Are expanded and collapsed the same here?? Refactor?? ////
 	.expanded {
 		display: flex;
 		flex-direction: row;
