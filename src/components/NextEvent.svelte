@@ -43,7 +43,13 @@
 		border-radius: 1.25rem;
 	}
 
+	/* make a breakpoint for mobile where the width of .content is 30vw */
+
 	.content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		/* width: 30vw; */
 		margin: 0rem 2rem;
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	}
@@ -57,7 +63,7 @@
 		padding: 0.5rem 2rem;
 		border-radius: 15px;
 		margin-bottom: 2rem;
-		/* padding-right: 8rem; */
+		/* max-width: 15vw; */
 	}
 
 	h1 {
@@ -81,5 +87,51 @@
 		font-size: 1rem;
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			flex-direction: column;
+			justify-content: start;
+			align-items: start;
+			width: 70vw;
+			margin: 0rem 2rem;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			align-items: start;
+			background-color: white;
+			padding: 0.5rem 2rem;
+			border-radius: 15px;
+			margin-bottom: 2rem;
+			max-width: 90vw;
+		}
+
+		h1 {
+			color: rgb(28, 26, 38);
+			font-size: 2rem;
+			font-weight: 800;
+			text-align: start;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin-bottom: 0;
+		}
+
+		h3 {
+			color: rgb(28, 26, 38);
+			font-size: 1.2rem;
+			margin-top: 0.5rem;
+			margin-bottom: 0;
+		}
+
+		p {
+			color: rgb(28, 26, 38);
+			font-size: 0.9rem;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
 	}
 </style>

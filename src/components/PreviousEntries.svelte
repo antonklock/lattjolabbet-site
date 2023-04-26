@@ -2,54 +2,36 @@
 </script>
 
 <div class="container">
-	<h1>Tidigare bidrag</h1>
-
-	<div class="outer">
-		<div class="inner">
-			<h2>Entry 1</h2>
-			<p>Info about 1st entry</p>
-		</div>
-	</div>
-
-	<div class="outer">
-		<div class="inner">
-			<h2>Entry 2</h2>
-			<p>Info about 1st entry</p>
-		</div>
-	</div>
+	<h1>Förra eventets bidrag</h1>
+	<p>
+		Here is a summary of the previous event. It was such a great time! Everyone laughed. I can't
+		rememeber the last time so many people had so much fun. I think it's some kind of record. Here
+		are some of the entries. a summary of the previous event.
+	</p>
 </div>
 
 <style>
+	h1 {
+		font-size: 3rem;
+		margin-bottom: 0;
+	}
 	.container {
 		display: flex;
 		flex-direction: column;
-		align-items: left;
+		align-items: center;
 		justify-content: center;
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		margin-top: 4rem;
-		width: 50vw;
-	}
-	h1 {
-		font-size: 3rem;
-		margin-bottom: 2rem;
-	}
-	.outer {
-		background: rgb(251, 40, 195);
-		background: linear-gradient(180deg, rgba(251, 40, 195, 1) 0%, rgba(178, 0, 146, 1) 100%);
-		border-radius: 1.5rem;
-		display: flex;
-		align-items: left;
-		justify-content: left;
-		margin-top: 2rem;
-		margin-bottom: 2rem;
-		box-shadow: 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.15);
+		margin: 10rem 8rem 0 8rem;
 	}
 
-	.inner {
-		background-color: white;
-		margin: 3px;
-		border-radius: 1.25rem;
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 1.8rem;
+			margin-bottom: 0;
+		}
 
-		padding: 0.5rem 2rem;
+		.container {
+			margin: 10rem 2rem 2rem 2rem;
+			text-align: center;
+		}
 	}
 </style>
