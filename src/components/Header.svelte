@@ -4,28 +4,42 @@
 <header>
 	<!-- <h1>LATTJOLABBET</h1> -->
 	<div class="title-container">
-		<div>
-			<h1 class="tbg-01">LAT</h1>
-			<h1 class="shadow">LAT</h1>
+		<div class="title-parent">
+			<h1 class="tbg-01 title-child-1">LAT</h1>
+			<h1 class="shadow title-child-2">LAT</h1>
 		</div>
 
-		<div>
-			<h1 class="tbg-02">TJO</h1>
-			<h1 class="shadow">TJO</h1>
+		<div class="title-parent">
+			<h1 class="tbg-02 title-child-1">TJO</h1>
+			<h1 class="shadow title-child-2">TJO</h1>
 		</div>
 
-		<div>
-			<h1 class="tbg-03">LAB</h1>
-			<h1 class="shadow">LAB</h1>
+		<div class="title-parent">
+			<h1 class="tbg-03 title-child-1">LAB</h1>
+			<h1 class="shadow title-child-2">LAB</h1>
 		</div>
-		<div>
-			<h1 class="tbg-04">BET</h1>
-			<h1 class="shadow">BET</h1>
+		<div class="title-parent">
+			<h1 class="tbg-04 title-child-1">BET</h1>
+			<h1 class="shadow title-child-2">BET</h1>
 		</div>
 	</div>
 </header>
 
 <style>
+	.title-parent {
+		position: relative;
+	}
+
+	.title-child-1 {
+		position: relative;
+	}
+
+	.title-child-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
 	.title-container {
 		display: flex;
 		flex-direction: column;
@@ -44,7 +58,6 @@
 	}
 
 	.shadow {
-		position: absolute;
 		margin-top: -17.5vh;
 		z-index: -1;
 		text-shadow: 0.5rem 0.35rem 0rem rgba(0, 0, 0, 0.25);
