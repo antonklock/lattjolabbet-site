@@ -33,7 +33,7 @@
 		justify-content: center;
 		margin-bottom: 2rem;
 
-		box-shadow: 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.15);
+		box-shadow: 0.5rem 0.35rem 1rem rgba(0, 0, 0, 0.1);
 	}
 
 	.inner {
@@ -43,13 +43,10 @@
 		border-radius: 1.25rem;
 	}
 
-	/* make a breakpoint for mobile where the width of .content is 30vw */
-
 	.content {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		/* width: 30vw; */
 		margin: 0rem 2rem;
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	}
@@ -63,7 +60,6 @@
 		padding: 0.5rem 2rem;
 		border-radius: 15px;
 		margin-bottom: 2rem;
-		/* max-width: 15vw; */
 	}
 
 	h1 {

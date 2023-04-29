@@ -35,6 +35,7 @@
 	}
 
 	.title-child-2 {
+		z-index: -1;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -58,8 +59,7 @@
 	}
 
 	.shadow {
-		z-index: -1;
-		text-shadow: 0.5rem 0.35rem 0rem rgba(0, 0, 0, 0.25);
+		text-shadow: 0.5rem 0.35rem 1rem rgba(0, 0, 0, 0.25);
 	}
 
 	.tbg-01 {

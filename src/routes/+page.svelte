@@ -5,6 +5,7 @@
 	import PreviousEntries from '../components/PreviousEntries.svelte';
 	import EntryComponent from '../components/EntryComponent.svelte';
 	import Footer from '../components/Footer.svelte';
+	import EntryList from '../components/EntryList.svelte';
 
 	let screenSize: number = 0;
 </script>
@@ -25,49 +26,6 @@
 		</div>
 
 		<PreviousEntries />
-
-		<EntryComponent
-			heading="Entry #1"
-			creator="Anton Klock"
-			paragraph="This is entry number one's paragraph. This is entry number one's... "
-			image="/thing_01.jpg"
-			alt="A weird looking thing."
-		/>
-
-		<EntryComponent
-			heading="Entry #1"
-			creator="Linda Zetterholm"
-			paragraph="This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. "
-			image="/thing_01.jpg"
-			alt="A weird looking thing."
-			position="right"
-		/>
-
-		<EntryComponent
-			heading="Entry #1"
-			creator="Erik Modin"
-			paragraph="This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. "
-			image="/thing_01.jpg"
-			alt="A weird looking thing."
-		/>
-
-		<EntryComponent
-			heading="Entry #1"
-			creator="Joel Gerhardsson"
-			paragraph="This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. "
-			image="/thing_01.jpg"
-			alt="A weird looking thing."
-			position="right"
-		/>
-
-		<EntryComponent
-			heading="Entry #1"
-			creator="Joel Gerhardsson"
-			paragraph="This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. "
-			image="/thing_01.jpg"
-			alt="A weird looking thing."
-		/>
-
 		<Footer />
 	</div>
 </div>
@@ -102,5 +60,22 @@
 		justify-content: center;
 		align-items: center;
 		max-width: 1200px;
+	}
+
+	@media (max-width: 768px) {
+		.content-area {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			max-width: 100%;
+		}
+
+		.page {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 </style>
