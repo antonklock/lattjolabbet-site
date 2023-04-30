@@ -8,7 +8,6 @@
 			heading="Goda Råd - Simon"
 			creator="Simon"
 			paragraph="This is entry number one's paragraph. This is entry number one's This is entry number one's paragraph. This is entry number one's paragraph. "
-			image="/thing_01.jpg"
 			mediaSrc="/PreviousEntries/godRadSimon.mp3"
 			type="audio"
 			alt="A weird looking thing."
@@ -85,18 +84,18 @@
 			align-items: center;
 		}
 
-		.container .entryRow:nth-child(even) {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-		}
+		// .container .entryRow:nth-child(even) {
+		// 	display: flex;
+		// 	flex-direction: row;
+		// 	justify-content: center;
+		// 	align-items: center;
+		// }
 
-		.container .entryRow:nth-child(odd) {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-		}
+		// .container .entryRow:nth-child(odd) {
+		// 	display: flex;
+		// 	flex-direction: row;
+		// 	justify-content: center;
+		// 	align-items: center;
+		// }
 	}
 </style>

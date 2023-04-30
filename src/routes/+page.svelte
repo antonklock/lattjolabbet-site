@@ -3,9 +3,8 @@
 	import NextEvent from '../components/NextEvent.svelte';
 	import PageDownArrow from '../components/PageDownArrow.svelte';
 	import PreviousEntries from '../components/PreviousEntries.svelte';
-	import EntryComponent from '../components/EntryComponent.svelte';
 	import Footer from '../components/Footer.svelte';
-	import EntryList from '../components/EntryList.svelte';
+	import About from '../components/About.svelte';
 
 	let screenSize: number = 0;
 </script>
@@ -16,6 +15,7 @@
 	<div class="content-area">
 		<Header />
 		<PageDownArrow />
+		<About />
 		<div class="next-event">
 			<NextEvent />
 			{#if screenSize > 1000}
@@ -68,7 +68,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			max-width: 100%;
+			max-width: 85%;
 		}
 
 		.page {

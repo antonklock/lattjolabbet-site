@@ -1,11 +1,12 @@
 <script lang="ts">
+	import Icon from '@iconify/svelte';
 	import ArrowIcon from './ArrowIcon.svelte';
 	import { Modal, Content, Trigger } from 'sv-popup';
 
 	export let heading: string;
 	export let creator: string;
 	export let paragraph: string;
-	export let image: string;
+	export let image: string | undefined = undefined;
 	export let mediaSrc: string;
 	export let alt: string;
 	export let position: 'left' | 'right' = 'left';
@@ -39,7 +40,11 @@
 			<div class="entryContent">
 				{#if state === 'collapsed'}
 					<div class="entryImage">
-						<img src={image} {alt} />
+						{#if image === undefined}
+							<Icon icon="material-symbols:music-note" width="64" />
+						{:else}
+							<img src={image} {alt} />
+						{/if}
 					</div>
 					<div class="entryText">
 						<h2>{heading}</h2>
@@ -65,7 +70,11 @@
 								</video>
 							</div>
 						{:else if type === 'audio'}
-							<img src={image} {alt} />
+							{#if image === undefined}
+								<Icon icon="material-symbols:music-note" width="64" />
+							{:else}
+								<img src={image} {alt} />
+							{/if}
 							<audio src={mediaSrc} controls />
 						{/if}
 					</div>
@@ -90,7 +99,7 @@
 	}
 
 	h2 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-weight: 700;
 		margin: 0;
 		margin-bottom: 0.2rem;
@@ -104,6 +113,10 @@
 		font-style: italic;
 	}
 
+	p {
+		font-size: 0.85rem;
+	}
+
 	.entry {
 		display: flex;
 		flex-direction: row;
@@ -115,8 +128,7 @@
 
 	.outer {
 		border-radius: 1.5rem;
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin: 2rem 1rem 2rem 1rem;
 		box-shadow: 0.5rem 0.35rem 1rem rgba(0, 0, 0, 0.1);
 		overflow: hidden;
 		width: 75%;
@@ -213,10 +225,11 @@
 
 	@media screen and (max-width: 768px) {
 		.outer {
+			width: 90%;
 			margin: 0, 2rem, 0, 2rem;
 		}
 		.entry {
-			max-width: 100vw;
+			max-width: 100%;
 		}
 
 		.entry .entryContent {
@@ -243,8 +256,39 @@
 			align-items: center;
 		}
 
+		.collapsed .entryImage {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			padding-right: 20px;
+		}
+
+		.collapsed .entryImage img {
+			position: relative;
+			width: 100px;
+			height: auto;
+			transform: translateX(0%) translateY(0%);
+		}
+
+		.expanded .entry {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 0rem 0rem 2rem 0rem;
+		}
+
 		.expanded video {
 			width: 100%;
+		}
+
+		.expanded .entryImage {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-right: 0px;
+			margin: 1rem 0rem 1rem 0rem;
 		}
 	}
 </style>

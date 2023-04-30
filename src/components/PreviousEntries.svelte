@@ -40,7 +40,7 @@
 
 		.container {
 			text-align: center;
-			margin: 10rem 1rem 0 1rem;
+			margin: 4rem 1rem 0 1rem;
 		}
 	}
 </style>
