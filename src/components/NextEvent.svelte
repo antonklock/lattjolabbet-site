@@ -25,20 +25,19 @@
 
 <style>
 	.outer {
+		max-width: 100%;
 		background: rgb(14, 223, 243);
 		background: linear-gradient(180deg, rgba(14, 223, 243, 1) 0%, rgba(22, 156, 141, 1) 100%);
 		border-radius: 1.5rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 2rem;
 
 		box-shadow: 0.5rem 0.35rem 1rem rgba(0, 0, 0, 0.1);
 	}
 
 	.inner {
 		background-color: white;
-		width: 99%;
 		margin: 3px;
 		border-radius: 1.25rem;
 	}

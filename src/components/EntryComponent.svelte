@@ -6,7 +6,7 @@
 	export let heading: string;
 	export let creator: string;
 	export let paragraph: string;
-	export let image: string | undefined = undefined;
+	export let image: string;
 	export let mediaSrc: string;
 	export let alt: string;
 	export let position: 'left' | 'right' = 'left';
@@ -34,17 +34,17 @@
 	};
 </script>
 
-<div class="outer {position} {state} {color}">
+<div
+	class="outer {position} {state} {color}"
+	on:click={() => handleCollapse()}
+	on:keydown={() => handleCollapse()}
+>
 	<div class="inner">
 		<div class="entry">
 			<div class="entryContent">
 				{#if state === 'collapsed'}
 					<div class="entryImage">
-						{#if image === undefined}
-							<Icon icon="material-symbols:music-note" width="64" />
-						{:else}
-							<img src={image} {alt} />
-						{/if}
+						<img src={image} {alt} />
 					</div>
 					<div class="entryText">
 						<h2>{heading}</h2>
@@ -70,11 +70,7 @@
 								</video>
 							</div>
 						{:else if type === 'audio'}
-							{#if image === undefined}
-								<Icon icon="material-symbols:music-note" width="64" />
-							{:else}
-								<img src={image} {alt} />
-							{/if}
+							<img src={image} {alt} />
 							<audio src={mediaSrc} controls />
 						{/if}
 					</div>

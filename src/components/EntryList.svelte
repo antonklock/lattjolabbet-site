@@ -8,6 +8,7 @@
 			heading="Goda Råd - Simon"
 			creator="Simon"
 			paragraph="This is entry number one's paragraph. This is entry number one's This is entry number one's paragraph. This is entry number one's paragraph. "
+			image="https://images.unsplash.com/photo-1591025810539-a321000cda85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
 			mediaSrc="/PreviousEntries/godRadSimon.mp3"
 			type="audio"
 			alt="A weird looking thing."
@@ -19,7 +20,7 @@
 			heading="Fånga dagen"
 			creator="Erik Modin"
 			paragraph="This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. "
-			image="/thing_01.jpg"
+			image="https://images.unsplash.com/photo-1618767451283-c9705dff0874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
 			mediaSrc="/PreviousEntries/fanga-dagen.mp4"
 			type="video"
 			alt="A weird looking thing."
@@ -32,8 +33,8 @@
 			heading="Entry #1"
 			creator="Erik Modin"
 			paragraph="This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. This is entry number one's paragraph. "
-			image="/thing_01.jpg"
-			mediaSrc="/thing_01.jpg"
+			image="https://images.unsplash.com/photo-1515144225933-899dcb0ca32e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+			mediaSrc="https://images.unsplash.com/photo-1515144225933-899dcb0ca32e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
 			alt="A weird looking thing."
 		/>
 	</div>
