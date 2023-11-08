@@ -9,7 +9,7 @@
 	</div>
 	<div class="container">
 		<h3>Datum</h3>
-		<p>30/03/23</p>
+		<p>30/09/23</p>
 
 		<h3>Plats</h3>
 		<p>Östra Strandgatan 32</p>
